@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Summary</h1>
+
+      <div>
+        You are about to submit the following information:
+        <h2 class="heading-small">Name: {{data['joe-test-name']}}</h2>
+        <h2 class="heading-small">Location: {{data['joe-test-location']}}</h2>
+      </div>
+
+      <div class="form-group" style="margin-top: 5rem;">
+        <form action="/api/v1/joetest" method="post" class="form">
+          <input type="submit" class="button" value="Bosh. Submit dat ting.">
+        </form>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

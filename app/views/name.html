@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Name</h1>
+
+      <h1 class="heading-medium">
+        What is your name?
+      </h1>
+
+      <div class="form-group">
+        <fieldset>
+          <input class="form-control" id="joe-test-name" name="joe-test-name" type="text" value="{{data['joe-test-name']}}">
+        </fieldset>
+      </div>
+
+      <p>{{data['joe-test-name']}}</p>
+
+      <a href="/location" class="button">Indeed, this is my name</a>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

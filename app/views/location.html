@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Location</h1>
+
+      <h1 class="heading-medium">
+        What is your location?
+      </h1>
+
+      <div class="form-group">
+        <fieldset>
+          <input class="form-control" id="joe-test-location" name="joe-test-location" type="text" value="{{data['joe-test-location']}}">
+        </fieldset>
+      </div>
+
+      <p>You have entered '{{data['joe-test-location']}}' as your location.</p>
+
+      <a href="/summary" class="button">Top work, keep going</a>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
